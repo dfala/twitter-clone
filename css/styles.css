@@ -70,7 +70,7 @@ body {
 #page-container {
 	padding: 54px 14px 15px;
 	margin: 0 auto;
-	width: 837px;
+	width: 880px;
 }
 #main {
 	float: right;
@@ -146,6 +146,7 @@ body {
 	border-bottom: 1px solid #e8e8e8;
 	min-height: 60px;
 	border-radius: 6px;
+	cursor: pointer;
 }
 
 	.tweet .avatar {
@@ -168,6 +169,7 @@ body {
 
 	.tweet-actions {
 		text-align: right;
+		visibility: hidden;
 	}
 		.tweet-actions ul {
 			list-style-type: none;
@@ -211,6 +213,7 @@ body {
 	.stats {
 		margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
+		display: none;
 	}
 		.stats, .stats div {
 			box-sizing: border-box;
@@ -252,6 +255,7 @@ body {
 			position: relative;
 			clear: both;
 			padding-left: 43px;
+			display: none;
 		}
 			.reply .avatar {
 				position: absolute;
@@ -260,3 +264,10 @@ body {
 			}
 
 
+.expanded-tweet .stats{
+	display: inherit;
+}
+
+.expanded-tweet .reply {
+	display: inherit;
+}

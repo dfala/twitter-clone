@@ -4,15 +4,21 @@
 		<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    	<script src="js/timeago.js"></script>
+    	<!-- BOOTSTRAP -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
 	</head>
 	<body>
 		<div id="page-container">
 			<div id="dashboard">
 				<div id="profile-summary">
 					<div class="content">
-						<img class='avatar' src='img/alagoon.jpg' />
-						<p>Your Name Here</p>
+						<img class='avatar' src='img/alagoon.jpg'/>
+						<p id="user-name"></p>
 					</div>
 				</div>
 				<div id="tweet-content">
@@ -78,15 +84,15 @@
 
 										<!-- BLACK DIAMOND: Implement the Bootstrap tooltips for when you hover over a user’s avatar image -->
 										<!-- HINT: Bootstrap has good documentation =) -->
-										<img src="img/alagoon.jpg" />
+										<img src="img/alagoon.jpg"/>
 										<img src="img/vklimenko.jpg" />
 									</div>
 								</div>
 
 								<!-- BLACK DIAMOND: Make the timestamp below similar to how they look on Twitter (1h, 18m, 1m) and use the jQuery timeago plugin to make them automatic. -->
 								<!-- HINT: Refer to timeago documentation -->
-								<div class="time">
-									1:04 PM - 19 Sep 13
+								<div class="time timeago" title="2008-07-17T09:24:17Z">
+									Sep 13, 2013
 								</div>
 							</div>
 							<div class="reply">
@@ -178,5 +184,7 @@
 				</div><!-- #stream -->
 			</div><!-- #main -->
 		</div><!-- #page-container -->
+
+		<script type="text/javascript" src="js/animations.js"></script>
 	</body>
 </html>
